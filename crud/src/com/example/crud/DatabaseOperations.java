@@ -4,6 +4,7 @@ import com.example.crud.TableData.TableInfo;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -44,4 +45,11 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 		Log.d("Database operations", "one row inserted");
 	}
 
+	public Cursor getInformation(DatabaseOperations dop) 
+	{
+		SQLiteDatabase SQ = dop.getReadableDatabase();
+		String[] columns = {TableInfo.Username,TableInfo.Pass};
+		Cursor CR = SQ.query(TableInfo.TABLE_NAME, columns, null, null, null, null, null);
+		return CR;
+	}
 }
