@@ -46,6 +46,7 @@ public class RegisterActivity extends Activity {
 				}
 				else
 				{
+					//Toast.makeText(getBaseContext(), user_name +" "+user_pass, Toast.LENGTH_LONG).show();
 					DatabaseOperations DB= new DatabaseOperations(ctx);
 					DB.putInformation(DB, user_name, user_pass);
 					Toast.makeText(getBaseContext(),"Registration success", Toast.LENGTH_LONG).show();

@@ -24,8 +24,8 @@
         android:layout_x="0dp"
         android:layout_y="105dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:text="Enter pass" />
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/con_pass"
@@ -34,8 +34,8 @@
         android:layout_x="4dp"
         android:layout_y="163dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:text="Confirm" />
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/user_reg"
