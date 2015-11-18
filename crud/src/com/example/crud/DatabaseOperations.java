@@ -13,7 +13,7 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 	
 	public static final int database_version=1;
 	public String CREATE_QUERY="CREATE TABLE "+TableInfo.TABLE_NAME+"("
-	+TableInfo.Username+" VARCHAR,"+TableInfo.Pass+" VARCHAR);";
+	+TableInfo.Username+"VARCHAR,"+TableInfo.Pass+"VARCHAR);";
 
 	public DatabaseOperations(Context context) {
 		super(context, TableInfo.DATABASE_NAME, null, database_version);
@@ -40,7 +40,7 @@ public class DatabaseOperations extends SQLiteOpenHelper {
 		ContentValues cv= new ContentValues();
 		cv.put(TableInfo.Username, name);
 		cv.put(TableInfo.Pass, pass);
-		SQ.insert(TableInfo.TABLE_NAME, null, cv);
+		long k= SQ.insert(TableInfo.TABLE_NAME, null, cv);
 		Log.d("Database operations", "one row inserted");
 	}
 
