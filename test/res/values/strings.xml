@@ -8,5 +8,12 @@
     <string name="LoginPassword">Password</string>
     <string name="LoginButton">Login</string>
     <string name="RegisterButton">Register</string>
+    <string-array name="drawerarraylist">
+        <item >Home</item>
+        <item >Member Details</item>
+        <item >Contributions</item>
+        <item >About</item>
+        <item >Logout</item>
+    </string-array>
 
 </resources>
