@@ -8,5 +8,8 @@
     <string name="LoginPassword">Password</string>
     <string name="LoginButton">Login</string>
     <string name="RegisterButton">Register</string>
+    <string name="usertxt">User ID:</string>
+    <string name="passtxt">Password:</string>
+    <string name="login_title">MEMBER LOGIN</string>
 
 </resources>
