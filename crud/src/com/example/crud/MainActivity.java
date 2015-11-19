@@ -10,7 +10,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
-
+Button Login;
+int status = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -23,6 +24,17 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Intent intentregister = new Intent(MainActivity.this, RegisterActivity.class);
 				startActivity(intentregister);
+			}
+		});
+		
+		Button tologin = (Button) findViewById(R.id.log_button);
+		tologin.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+			
+				Intent intentlogin = new Intent(MainActivity.this, LoginActivity.class);
+				startActivity(intentlogin);
 			}
 		});
 	}

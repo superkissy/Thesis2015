@@ -24,4 +24,14 @@
         android:layout_marginTop="46dp"
         android:text="Register" />
 
+    <Button
+        android:id="@+id/log_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regbutton"
+        android:layout_alignRight="@+id/regbutton"
+        android:layout_below="@+id/regbutton"
+        android:layout_marginTop="26dp"
+        android:text="Login" />
+
 </RelativeLayout>
