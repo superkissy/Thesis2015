@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -17,6 +18,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import ph.gov.sss.PrefUtils;
 
 public class HomeActivity extends Activity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
@@ -34,9 +36,24 @@ public class HomeActivity extends Activity implements NavigationDrawerFragment.N
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
+		PrefUtils prefutils = new PrefUtils();
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		
+		if(PrefUtils.getFromPrefs(HomeActivity.this, prefutils.PREFS_LOGIN_USERNAME_KEY, "") == "")
+		{
+			onDestroy();
+			Intent login = new Intent(HomeActivity.this, LoginActivity.class);
+			login.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+			startActivity(login);
+		}
+		else
+		{
+			
+		}
+		
 		mNavigationDrawerFragment = (NavigationDrawerFragment) getFragmentManager()
 				.findFragmentById(R.id.navigation_drawer);
 		mTitle = getTitle();
@@ -62,7 +79,10 @@ public class HomeActivity extends Activity implements NavigationDrawerFragment.N
 			mTitle = getString(R.string.title_section2);
 			break;
 		case 3:
-			mTitle = getString(R.string.title_section3);
+			PrefUtils.removeFromPrefs(HomeActivity.this);
+			Intent login = new Intent(HomeActivity.this, LoginActivity.class);
+			login.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+			startActivity(login);
 			break;
 		}
 	}
