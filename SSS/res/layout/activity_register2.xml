@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="518dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical" >
+		
+            <TextView
+            android:id="@+id/For"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="*Required Field"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="*SSS/CRN Number:" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Firstname:" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Middle Name:" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Lastname:" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Date of Birth:" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="MM/DD/YY"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Mother’s Maiden Name:" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Address Line 1" />
+        
+        <EditText
+        android:id="@+id/editText7"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+        
+          <TextView
+              android:id="@+id/textView9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:layout_marginRight="30dp"
+              android:text="(House or Lot Block #/Street Name)"
+              android:textSize="12sp" />
+          
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Address Line 2" />
+          
+       <EditText
+        android:id="@+id/editText8"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+        
+          <TextView
+              android:id="@+id/textView10"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:layout_marginRight="30dp"
+              android:text="(Barangay/Subdivision/Municipality)"
+              android:textSize="12sp" />
+          
+         <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*City/Province" />
+         
+          <EditText
+            android:id="@+id/editText9"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+          
+           <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Postal Code" />
+           
+            <EditText
+            android:id="@+id/editText10"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="number" />
+            
+            
+            
+            <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Contact Number" />
+           
+            <EditText
+            android:id="@+id/editText11"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="phone" />
+            
+            
+            <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Email Address:" />
+            
+            <EditText
+            android:id="@+id/editText12"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+            
+            <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Preferred User ID:" />
+            
+            <EditText
+            android:id="@+id/editText13"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10" />
+            
+            <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Confirm Preferred User ID:" />
+            
+            <EditText
+            android:id="@+id/editText14"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10" />
+            
+            <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Preferred Password:" />
+            
+            <EditText
+            android:id="@+id/editText16"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPassword"  />
+            
+            <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="*Confirm Preferred Password:" />
+            
+            <EditText
+            android:id="@+id/editText17"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPassword"  />
+            
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="34dp"
+                android:text="Next" />
+           
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
